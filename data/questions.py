@@ -147,13 +147,13 @@ conversation_topics = {
 }
 
 
-c = 0
-for key, value in conversation_topics.items():
-    for v in value:
-        c += 1
-        q_data = {
-            "qid": c,
-            "topic": key,
-            "question": v
-        }
-        Question.objects.create(**q_data)
+# c = 0
+# for key, value in conversation_topics.items():
+#     for v in value:
+#         c += 1
+#         q_data = {
+#             "qid": c,
+#             "topic": key,
+#             "question": v
+#         }
+#         Question.objects.create(**q_data)
