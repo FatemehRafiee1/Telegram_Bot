@@ -18,7 +18,10 @@ def make_request(config, history: list):
     response = requests.post(url, json=payload, headers=headers)
     return response.json()
 
-if __name__ == "__main__":
-    d = [{"role": "user", "content": "A synonym for lofty?"}]
-    result = make_request(config, d)
-    print(result['choices'][0]['message']['content'])
+
+# sample usage
+
+# if __name__ == "__main__":
+#     d = [{"role": "user", "content": "A synonym for lofty?"}]
+#     result = make_request(config, d)
+#     print(result['choices'][0]['message']['content'])
